@@ -35,6 +35,9 @@ const Shop = () => {
 
   // Handle Choose One Button
   const chooseOne = () => {
+    if (cart.length === 0) {
+      return;
+    }
     setCart([cart[Math.floor(Math.random() * cart.length)]]);
   };
 
