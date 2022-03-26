@@ -36,13 +36,16 @@ const Shop = () => {
 
   // Handle Choose One Button
   const chooseOne = () => {
-    console.log(cart);
     // Empty cart Handle
     if (cart.length === 0) {
       return;
     }
+    
+    // Update cart by random product
     const random = Math.floor(Math.random() * cart.length);
     setCart([cart[random]]);
+
+    // Show Sweet Alert
     Swal.fire({
       icon: "success",
       imageUrl: cart[random].img,

@@ -1,6 +1,7 @@
 import logo from "./Logo.png";
 import "./App.css";
 import Shop from "./components/Shop/Shop";
+import Question from "./components/Question/Question";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       </div>
       {/* main */}
       <div className="container-fluid">
-          <Shop></Shop>
+        <Shop></Shop>
+        <Question></Question>
       </div>
     </div>
   );

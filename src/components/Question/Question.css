@@ -1,0 +1,33 @@
+/* Question and Answer */
+.qa {
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    padding: 10px 46px;
+    margin: 10px;
+    background-color: bisque;
+  }
+  
+  .qa p span {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .qa h2 span {
+    color: brown;
+  }
+  
+  .section_name {
+    text-align: center;
+    margin: 30px 0px;
+  }
+  
+  .qa td,
+  .qa th {
+    border: 3px solid darkorange;
+    padding: 10px;
+  }
+  
+  .qa th {
+    text-align: center;
+    color: blueviolet;
+  }
