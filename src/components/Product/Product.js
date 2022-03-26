@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Product = (props) => {
+  // De-structuring
   const { product, handleAddToCart } = props;
   const { name, img, price } = product;
 

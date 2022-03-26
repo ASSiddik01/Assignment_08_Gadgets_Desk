@@ -16,7 +16,6 @@ const Shop = () => {
 
   // Handle Cart Button
   const handleAddToCart = (selectedProduct) => {
-    // console.log(selectedProduct);
     let newCart = [];
     const exists = cart.find((product) => product.id === selectedProduct.id);
     if (!exists) {
@@ -28,16 +27,14 @@ const Shop = () => {
     setCart(newCart);
   };
 
+  // Handle Choose One Button
+  const chooseOne = () => {
+    setCart([cart[Math.floor(Math.random() * cart.length)]]);
+  }
+
   // Handle Choose Again Button
   const chooseAgain = () => {
     setCart([])
-  }
-  console.log(cart);
-
-  // Handle Choose One Button
-  const chooseOne = () => {
-    // const random = Math.floor(Math.random() * cart.length);
-    setCart([cart[Math.floor(Math.random() * cart.length)]]);
   }
 
   return (
@@ -57,7 +54,7 @@ const Shop = () => {
       {/* Cart Container */}
       <div className="cart_contianer rounded-3">
         <Cart
-          product={cart}
+          selectedProducts={cart}
           chooseAgain={chooseAgain}
           chooseOne={chooseOne}
         ></Cart>

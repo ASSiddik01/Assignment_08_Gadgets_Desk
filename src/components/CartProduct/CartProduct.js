@@ -2,7 +2,7 @@ import React from "react";
 import "./CartProduct.css";
 
 const CartProduct = (props) => {
-    // console.log(props)
+  // De-structuring
     const { name,img } = props.product;
   return (
     <div className="d-flex align-items-center my-2">
