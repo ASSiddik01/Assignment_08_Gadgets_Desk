@@ -8,13 +8,13 @@ function App() {
       {/* Site Header */}
       <div className="container">
         <div className="row">
-          <div className="col-lg-12 py-3">
+          <div className="col-lg-12 my-4">
             <img width={150} src={logo} alt="" />
           </div>
         </div>
       </div>
       {/* main */}
-      <div className="container">
+      <div className="container-fluid">
           <Shop></Shop>
       </div>
     </div>
