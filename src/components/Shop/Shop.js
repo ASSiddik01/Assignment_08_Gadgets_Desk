@@ -28,9 +28,16 @@ const Shop = () => {
     setCart(newCart);
   };
 
-  // Handel Choose Again Button
+  // Handle Choose Again Button
   const chooseAgain = () => {
     setCart([])
+  }
+  console.log(cart);
+
+  // Handle Choose One Button
+  const chooseOne = () => {
+    // const random = Math.floor(Math.random() * cart.length);
+    setCart([cart[Math.floor(Math.random() * cart.length)]]);
   }
 
   return (
@@ -52,6 +59,7 @@ const Shop = () => {
         <Cart
           product={cart}
           chooseAgain={chooseAgain}
+          chooseOne={chooseOne}
         ></Cart>
       </div>
     </div>
