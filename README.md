@@ -1,5 +1,5 @@
 # Gadgets Desk
 
-## [Live Site](http://localhost:3000)
+## [Live Site](https://gadgets-desk.netlify.app/)
 
-Click Here to site preview [http://localhost:3000](http://localhost:3000)
+Click here to site preview [https://gadgets-desk.netlify.app/](https://gadgets-desk.netlify.app/)
