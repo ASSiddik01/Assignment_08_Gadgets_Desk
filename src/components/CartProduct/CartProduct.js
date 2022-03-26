@@ -7,7 +7,7 @@ const CartProduct = (props) => {
   return (
     <div className="d-flex align-items-center my-2">
       <img className="rounded-circle" width={50} src={img} alt="" />
-      <p className="mb-0 ms-2 fw-bold">{name}</p>
+      <h5 className="mb-0 ms-2 fw-bold">{name}</h5>
     </div>
   );
 };

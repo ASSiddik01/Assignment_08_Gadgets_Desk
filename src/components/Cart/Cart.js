@@ -15,14 +15,14 @@ const Cart = ({ chooseAgain, chooseOne, selectedProducts}) => {
       <button
         onClick={chooseOne}
         type="button"
-        className="d-block my-3 btn btn-outline-success text-uppercase fw-bold"
+        className="d-block my-3 btn btn-outline-primary text-uppercase fw-bold"
       >
         Choose 1 for me
       </button>
       <button
         onClick={chooseAgain}
         type="button"
-        className="d-block my-3 btn btn-outline-secondary text-uppercase fw-bold"
+        className="d-block my-3 btn btn-outline-dark text-uppercase fw-bold"
       >
         Choose Again
       </button>

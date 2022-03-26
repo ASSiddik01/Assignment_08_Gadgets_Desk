@@ -24,7 +24,8 @@ const Shop = () => {
       const rest = cart.filter((product) => product.id !== selectedProduct.id);
       newCart = [...rest, exists];
     }
-    console.log(newCart.length);
+
+    // Show Alert
     if (newCart.length > 4) {
       alert("Opps..., you don't select more than 4 items");
       return;
