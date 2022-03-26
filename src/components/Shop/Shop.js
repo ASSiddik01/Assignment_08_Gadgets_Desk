@@ -24,18 +24,23 @@ const Shop = () => {
       const rest = cart.filter((product) => product.id !== selectedProduct.id);
       newCart = [...rest, exists];
     }
+    console.log(newCart.length);
+    if (newCart.length > 4) {
+      alert("Opps..., you don't select more than 4 items");
+      return;
+    }
     setCart(newCart);
   };
 
   // Handle Choose One Button
   const chooseOne = () => {
     setCart([cart[Math.floor(Math.random() * cart.length)]]);
-  }
+  };
 
   // Handle Choose Again Button
   const chooseAgain = () => {
-    setCart([])
-  }
+    setCart([]);
+  };
 
   return (
     <div className="shop_container">
