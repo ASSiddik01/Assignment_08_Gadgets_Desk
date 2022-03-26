@@ -1,55 +1,55 @@
 [
   {
     "id": "01",
-    "title": "3in1 Wireless Charger",
+    "name": "3in1 Wireless Charger",
     "img": "https://i.ibb.co/cyfDZ6r/714712978808.jpg",
     "price": 29.56
   },
   {
     "id": "02",
-    "title": "4K Action Camera",
+    "name": "4K Action Camera",
     "img": "https://i.ibb.co/mh213Kx/2-B9180013-B17362-DE274-D5323-F8845-F0.jpg",
     "price": 87.9
   },
   {
     "id": "03",
-    "title": "USB Docking Station",
+    "name": "USB Docking Station",
     "img": "https://i.ibb.co/rMrsxCW/Hcf6d9296f2a94778a97b36d1e5c26bb6n.jpg",
     "price": 197.89
   },
   {
     "id": "04",
-    "title": "NFC Smart Ring",
+    "name": "NFC Smart Ring",
     "img": "https://i.ibb.co/6B3vQ80/S522aab4a489248a1aaed34038e0fd230-Q.jpg",
     "price": 53.78
   },
   {
     "id": "05",
-    "title": "Pro Bluetooth Earphone",
+    "name": "Pro Bluetooth Earphone",
     "img": "https://i.ibb.co/Z8Yzb5Y/S9920dcd3e0274166a7f8704fe7c2d255-P.jpg",
     "price": 71.98
   },
   {
     "id": "06",
-    "title": "Power Bank",
+    "name": "Power Bank",
     "img": "https://i.ibb.co/B247vFs/S0385d91cfca14d0dbcca9d01fe4afb9c-M.jpg",
     "price": 58.0
   },
   {
     "id": "07",
-    "title": "TWS Wireless Earphone",
+    "name": "TWS Wireless Earphone",
     "img": "https://i.ibb.co/j9Y2dp6/H53663b777b1644f596a0f39c48cc37d4e.jpg",
     "price": 75.0
   },
   {
     "id": "08",
-    "title": "Sports Smart Watch",
+    "name": "Sports Smart Watch",
     "img": "https://i.ibb.co/gR9BZmp/5583330-AD29-E9-CCB640-B2-E607640-B2-B6.jpg",
     "price": 45.78
   },
   {
     "id": "09",
-    "title": "Mini HD Projector",
+    "name": "Mini HD Projector",
     "img": "https://i.ibb.co/r4x7VK7/1732739262426.jpg",
     "price": 90.95
   }
