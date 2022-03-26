@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import "./Shop.css";
+import Swal from "sweetalert2";
 
 const Shop = () => {
   // Set and Get Products from products JSON file
@@ -35,10 +36,20 @@ const Shop = () => {
 
   // Handle Choose One Button
   const chooseOne = () => {
+    console.log(cart);
+    // Empty cart Handle
     if (cart.length === 0) {
       return;
     }
-    setCart([cart[Math.floor(Math.random() * cart.length)]]);
+    const random = Math.floor(Math.random() * cart.length);
+    setCart([cart[random]]);
+    Swal.fire({
+      icon: "success",
+      imageUrl: cart[random].img,
+      imageHeight: 50,
+      title: cart[random].name,
+      text: "This is your lucky product, You can purchase now",
+    });
   };
 
   // Handle Choose Again Button
