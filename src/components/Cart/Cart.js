@@ -2,14 +2,16 @@ import React from "react";
 import CartProduct from "../CartProduct/CartProduct";
 import "./Cart.css";
 
-const Cart = ({ chooseAgain, chooseOne, selectedProducts}) => {
-
+const Cart = ({ chooseAgain, chooseOne, selectedProducts }) => {
   return (
     <div className="cart">
       <h3 className="fw-bold">Selected Items</h3>
       <div className="cart_product">
         {selectedProducts.map((selectedProduct) => (
-          <CartProduct key={selectedProduct.id} product={selectedProduct}></CartProduct>
+          <CartProduct
+            key={selectedProduct.id}
+            product={selectedProduct}
+          ></CartProduct>
         ))}
       </div>
       <button

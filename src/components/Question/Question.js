@@ -1,10 +1,11 @@
 import React from "react";
+import './Question.css'
 
 const Question = () => {
   return (
     <div>
-      <h1 class="section_name">Question &#38; Answer</h1>
-      <div class="qa">
+      <h1 className="section_name">Question &#38; Answer</h1>
+      <div className="qa">
         <h2>
           <span>Q:</span> How does useState Work
         </h2>
@@ -17,7 +18,7 @@ const Question = () => {
           the count value.
         </p>
       </div>
-      <div class="qa">
+      <div className="qa">
         <h2>
           <span>Q:</span> Difference between Porps and State
         </h2>

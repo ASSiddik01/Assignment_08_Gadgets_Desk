@@ -5,7 +5,7 @@ import "./Shop.css";
 import Swal from "sweetalert2";
 
 const Shop = () => {
-  // Set and Get Products from products JSON file
+  // Set state and Get Products from products JSON file
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch("products.json")
@@ -13,6 +13,7 @@ const Shop = () => {
       .then((data) => setProducts(data));
   }, []);
 
+  // Set selected Items
   const [cart, setCart] = useState([]);
 
   // Handle Cart Button
@@ -40,7 +41,7 @@ const Shop = () => {
     if (cart.length === 0) {
       return;
     }
-    
+
     // Update cart by random product
     const random = Math.floor(Math.random() * cart.length);
     setCart([cart[random]]);
