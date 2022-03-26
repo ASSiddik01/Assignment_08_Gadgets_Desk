@@ -9,6 +9,7 @@ const Cart = (props) => {
   //   alert("kkkk");
   //   return;
   // }
+  const {chooseAgain} = props;
 
   return (
     <div className="cart">
@@ -18,6 +19,8 @@ const Cart = (props) => {
           <CartProduct key={cartProduct.id} product={cartProduct}></CartProduct>
         ))}
       </div>
+      <button type="button" className="d-block my-3 btn btn-outline-success text-uppercase fw-bold">Choose 1 for me</button>
+      <button onClick={chooseAgain} type="button" className="d-block my-3 btn btn-outline-secondary text-uppercase fw-bold">Choose Again</button>
     </div>
   );
 };

@@ -28,6 +28,11 @@ const Shop = () => {
     setCart(newCart);
   };
 
+  // Handel Choose Again Button
+  const chooseAgain = () => {
+    setCart([])
+  }
+
   return (
     <div className="shop_container">
       {/* Product Container */}
@@ -44,7 +49,10 @@ const Shop = () => {
       </div>
       {/* Cart Container */}
       <div className="cart_contianer rounded-3">
-        <Cart product={cart}></Cart>
+        <Cart
+          product={cart}
+          chooseAgain={chooseAgain}
+        ></Cart>
       </div>
     </div>
   );
